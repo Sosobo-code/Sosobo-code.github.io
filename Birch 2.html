@@ -128,6 +128,19 @@ width=50px" alt="whitetreethatisbirch">
 </body>
 </html>
 <html>
+  <head>
+    <script>
+      var showHide = document.getElementById("showHide");
+var demo = document.getElementById("demo");
+showHide.onclick = function() {
+  if (demo.style.display == "block") {
+    demo.style.display = "none";
+  } else {
+    demo.style.display = "block";
+  }
+}
+    </script>
+  </head>
   <body>
     <p class="question">1. What makes birch so flammable</p>
 
@@ -141,18 +154,8 @@ width=50px" alt="whitetreethatisbirch">
 
 <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">none are correct</label><br/>
 </ul>
-<script>
-  var tag = document.getElementById('demo');
-var button = document.querySelector('button');
-button.addEventListener('click', function(){
-tag.classList.toggle('demo');
-});
-.demo {
-   display: none;
-}
-</script>
-<p id='demo' class='demo'>Hello Javascript</p>
-<button type='button'> click me </button>
+<p id='demo' style='display: none'>Hello Javascript</p>
+<button id="showHide">Click Me</button>
 </div>
   </body>
 </html>
