@@ -141,17 +141,17 @@ width=50px" alt="whitetreethatisbirch">
 
 <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">none are correct</label><br/>
 </ul>
-<p><button onclick="myFunction()">click</button></p>
+<p><button onclick="myFunction()">click for answer</button></p>
 
-<div id="myDIV">Show answer</div>
+<div id="myDIV">-----------</div>
 
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Show answer") {
+  if (x.innerHTML === "-----------") {
     x.innerHTML = "1. The bark";
   } else {
-    x.innerHTML = "Show answer";
+    x.innerHTML = "-----------";
   }
 }
 </script>
