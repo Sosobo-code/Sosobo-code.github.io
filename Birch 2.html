@@ -141,8 +141,18 @@ width=50px" alt="whitetreethatisbirch">
 
 <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">none are correct</label><br/>
 </ul>
-<p id='demo' class='demo'>Bark is the answer</p>
-<button type='button'> click here for answer </button>
+<script>
+  var tag = document.getElementById('demo');
+var button = document.querySelector('button');
+button.addEventListener('click', function(){
+tag.classList.toggle('demo');
+});
+.demo {
+   display: none;
+}
+</script>
+<p id='demo' class='demo'>Hello Javascript</p>
+<button type='button'> click me </button>
 </div>
   </body>
 </html>
