@@ -174,6 +174,20 @@ function myFunction() {
 
 <input type="radio" name="q2" value="f" id="q2f"><label for="q1f">6. both 40 to 200 years</label><br/>
   </ul>
+  <p><button onclick="myFunction()">click for answer</button></p>
+
+<div id="myDIV">-----------</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "-----------") {
+    x.innerHTML = "5. both 30 to 300 years";
+  } else {
+    x.innerHTML = "-----------";
+  }
+}
+</script>
 </div>
   </body>
 </html>
