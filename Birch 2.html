@@ -131,108 +131,37 @@ width=50px" alt="whitetreethatisbirch">
 <html>
   <head>
   <body>
- <p class="question">1. What makes birch so flammable</p>
-<ul class="answers">
-
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">1. The bark</label><br/>
-
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">2. The leaves</label><br/>
-
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">3. The roots </label><br/>
-
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1dgi">4. none are correct</label><br/>
-</ul>
-</div>
-  </body>
-</html>
-<html>
-  <body>
-   <p class="question">. 2. What makes birch so flammable</p>
-<ul class="answers">
-    
-    <input type="radio" name="q2" value="a" id="q2a"><label for="q1a">1. 200 years</label><br/>
-
-<input type="radio" name="q2" value="b" id="q2b"><label for="q1b">2. 300 years</label><br/>
-
-<input type="radio" name="q2" value="c" id="q2c"><label for="q1c">3. 40 years </label><br/>
-
-<input type="radio" name="q2" value="d" id="q2d"><label for="q1d">4. 30 years</label><br/>
-
-<input type="radio" name="q2" value="e" id="q2e"><label for="q1e">5. both 30 to 300 years</label><br/>
-
-<input type="radio" name="q2" value="f" id="q2f"><label for="q1f">6. both 40 to 200 years</label><br/>
-  </ul>
-</div>
-  </body>
-</html>
-
-<html>
-  <body>
-    <p class="question">. 3. Why is paper birch white</p>
-      
-    <ul class="answers">
-    
-    <input type="radio" name="q3" value="a" id="q3a"><label for="q1a">1. the white from the inside was pushed onto the outside</label><br/>
-
-<input type="radio" name="q3" value="b" id="q3b"><label for="q1b">2. Birch reflects the suns rays</label><br/>
-
-<input type="radio" name="q3" value="c" id="q3c"><label for="q1c">3. Birch absorbs the suns rays </label><br/>
-
-<input type="radio" name="q3" value="d" id="q3d"><label for="q1d">4. it is not white</label><br/>
-  </ul>
-</div>
-  </body>
-</html>
-<html>
-  <body>
- <p class="question">. 4. How long can birch live cultivated </p>
-
-    <ul class="answers">
-    
-    <input type="radio" name="q4" value="a" id="q4a"><label for="q1a">1. 30 to 300 years</label><br/>
-
-<input type="radio" name="q4" value="b" id="q4b"><label for="q1b">2. 30 years</label><br/>
-
-<input type="radio" name="q4" value="c" id="q4c"><label for="q1c">3. 3 to 5 years old </label><br/>
-
-<input type="radio" name="q4" value="d" id="q4d"><label for="q1d">4. 400 years</label><br/>
-
-<input type="radio" name="q4" value="e" id="q4d"><label for="q1d">5. 30 to 40 years old </label><br/>
-
-<input type="radio" name="q4" value="e" id="q4d"><label for="q1d">6. 40 to 50 years old </label><br/>
-  </ul>
-</div>
-  </body>
-</html>
-<html>
-<body>
- <p class="question">. 5. What is the worst thing birch can do</p>
-<ul class="answers">
-    
-  <input type="radio" name="q5" value="a" id="q5a"><label for="q1a">1. kill birds to the touch </label><br/>
-
-<input type="radio" name="q5" value="b" id="q5b"><label for="q1b">2. die randomly </label><br/>
-
-<input type="radio" name="q5" value="c" id="q5c"><label for="q1c">3. Ruin land </label><br/>
-
-<input type="radio" name="q5" value="d" id="q5d"><label for="q1d">4. Kill crops </label><br/>
-
-<input type="radio" name="q5" value="e" id="q5d"><label for="q1d">5. grow too big  </label><br/>
-
-<input type="radio" name="q54" value="e" id="q5d"><label for="q1d">6. not grow </label><br/>
-</ul>
-</div>
-<p><button onclick="myFunction()">Click here for answers</button></p>
-
-<div id="myDIV">. . . . .</div>
-
 <script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.innerHTML === ". . . . .") {
-    x.innerHTML = "The bark, both 30 to 300, reflects the suns rays, 30 to 40 years, ruin land.";
+  const myQuestions = [
+  {
+    question: "Who invented JavaScript?",
+    answers: {
+      a: "Douglas Crockford",
+      b: "Sheryl Sandberg",
+      c: "Brendan Eich"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Which one of these is a JavaScript package manager?",
+    answers: {
+      a: "Node.js",
+      b: "TypeScript",
+      c: "npm"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Which tool can you use to ensure code quality?",
+    answers: {
+      a: "Angular",
+      b: "jQuery",
+      c: "RequireJS",
+      d: "ESLint"
+    },
+    correctAnswer: "d"
   }
-}
+];
 </script>
 </body>
 </html>
