@@ -1,61 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <body>
+    <script>
+      //Add a player object to the game
+new Game.Player(100, 100, '/images/players/dog.png');
 
-.topnav {
-  overflow: hidden;
-  background-color:black;
-}
+//Create a variable to store the score
+var score = new Game.Score();
 
-.topnav a { 
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+//Add some good items for the player to collect
+new Game.GoodItem(50, 50, '/images/food/hotdog.png');
+new Game.GoodItem(300, 100, '/images/food/sandwich.png');
+new Game.GoodItem(150, 200, '/images/food/fries.png');
+new Game.GoodItem(350, 550, '/images/food/chicken.png');
+new Game.GoodItem(50, 500, '/images/food/fish.png');
+new Game.GoodItem(250, 400, '/images/food/cheese.png');
 
-.topnav a:hover {
-  background-color: grey;
-  color:#f8dfa1;
-}
+//Add some obstacles for the player to avoid
 
-.topnav a.active {
-  background-color: #f8dfa1;
-  color: white;
-}
-h1 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-h2 {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
-}
-</style>
-</head>
-<body>
+new Game.Obstacle(150, 100, '/images/items/bin.png');
+new Game.Obstacle(200, 500, '/images/items/rock.png');
+new Game.Obstacle(150, 250, '/images/items/plant.png');
+new Game.Obstacle(300, 250, '/images/items/plant.png');
+new Game.Obstacle(50, 500, '/images/items/rock.png');
 
-<div class="topnav">
-  <a class="active" href="file:///C:/Users/arrsh/OneDrive/Desktop/Coding/P.html">Click of one of these guys!</a>
-  <a href="file:///C:/Users/arrsh/OneDrive/Desktop/Assesment/index.html">Home</a>
-  <a href="file:///C:/Users/arrsh/OneDrive/Desktop/Assesment/Birch 2.html">Assesment document</a>
-  <a href="file:///C:/Users/arrsh/OneDrive/Desktop/Assesment/Games.html">Game</a>
-  <a href="">My scratch page</a>
-  <a href="https://www.youtube.com/channel/UCQz76OpF7U7hnU4EWXgt3zg">My youtube channel</a>
-  <a href="file:///C:/Users/arrsh/OneDrive/Desktop/Coding/Interactions.html">Interactive entertainment</a>
-  <a href="file:///C:/Users/arrsh/OneDrive/Desktop/Assesment/Secret.html">Secret</a>
-</div>
-
-<div style="padding-left:16px">
-  
-  <h1>NOT ON ME</h1>
-</div>
-
-</body>
+    </script>
+  </body>
 </html>
